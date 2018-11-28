@@ -1,6 +1,7 @@
 
 .menu-list {
     padding: 0;
+    margin: 0;
 }
 .menu {
     display: inline-block;
@@ -19,15 +20,15 @@
 
 }
 .header {
-    margin: 0 auto;
-    padding: 71px 0 18px 0;
+    /* margin: 0 auto; */
+    padding: 70px 0 18px 0;
     text-align: center;
-    font-size: 0px;
+    /* font-size: 0px; */
     font-family: 'Playfair Display', serif;
 }
 .wrapper {
+    padding-bottom: 70px;
     margin: 0 auto;
-    width: 100%;
     max-width: 900px;
     font-size: 0px;
     font-family: 'Playfair Display', serif;
@@ -72,9 +73,9 @@ color: #626262;
     line-height: 24px;
     margin: 0;
 }
-.button {
+button[type="button"] {
     display: block;
-    margin: 0 auto 70px auto;
+    margin: 0 auto ;
     font-size: 20px;
     line-height: 24px;
     min-width: 165px;
