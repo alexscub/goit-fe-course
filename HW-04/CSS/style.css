@@ -111,11 +111,8 @@ img {
     width: 53px;
     padding: 10px;
 }
-.currency {
-    float: left;
-}
-.price {
-    float: right;
+.item-price::before {
+    content: '\0024';
 }
 .wrapper {
     margin: 0 -15px 62px -15px;
