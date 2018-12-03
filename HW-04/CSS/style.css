@@ -1,7 +1,7 @@
 .nav-container {
     width: 1140px;
     margin: 0 auto;
-    padding: 40px 15px;
+    padding: 32px 15px;
     box-sizing: border-box;
 }
 .container {
@@ -16,6 +16,7 @@
     clear: both;
 }
 header {
+    padding: 8px;
     margin-bottom: 40px;
 }
 .nav-logo {
@@ -25,14 +26,20 @@ header {
 .site-navigation {
     float: right;
     margin: 0 auto;
-    padding:  4px 0 0 0;
+    padding: 0;
 }
 .navigation-item {
     width: 90px;
     text-align: center;
     display: inline-block;
+    margin-right: 2px;
+}
+.navigation-item:last-child {
+    margin-right: 0;
 }
 .nav-link {
+    display: block;
+    padding: 5px;
     color: #0f0101;
     text-decoration: none;
     text-transform: uppercase;
@@ -46,7 +53,7 @@ color: #1abc9c;
 .headline {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    margin: 0 0 100px 0;
+    margin: 0 0 116px 0;
     text-align: center;
     font-size: 48px;
     font-weight: 600;
@@ -66,17 +73,15 @@ color: #1abc9c;
 .item-card {
     box-sizing: border-box;
     float: left;
-    width: 285px;
-    padding: 15px;
+    width: 255px;
+    margin: 0 30px 30px 0;
     font-family: 'Roboto', sans-serif;
 }
-button {
-    width: 100%;
-    text-align: left;
-    display: block;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+.item-card:nth-child(4n+4) {
+    margin-right: 0;
+}
+.item-card:nth-child(n+4) {
+    margin-bottom: 0;
 }
 img {
     display: block;
@@ -109,15 +114,16 @@ img {
 .item-price::before {
     content: '\0024';
 }
-.wrapper {
-    margin: 0 -15px 0 -15px;
-}
+
 .news-card {
     box-sizing: border-box;
     float: left;
-    width: 378px;
-    padding: 0 15px 0 15px;
+    width: 348px;
     font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+}
+.news-card:last-child {
+    margin-right: 0;
 }
 .news-head {
     position: relative;
@@ -145,7 +151,7 @@ img {
     line-height: 26px;
     letter-spacing: -0.01em;
     color: #555252;
-    margin: 0 0 14px 0;
+    margin: 0 0 12px 0;
 }
 .read-more-link {
     display: block;
@@ -156,9 +162,9 @@ img {
     font-size: 16px;
     width: 160px;
     text-align: center;
-    padding: 18px 0;
+    padding: 16px 0;
     border-radius: 3px;
 }
 .products {
-margin-bottom: 80px;
+margin-bottom: 96px;
 }
