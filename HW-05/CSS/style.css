@@ -1,7 +1,7 @@
 .nav-container {
     width: 1140px;
     margin: 0 auto;
-    padding: 40px 15px;
+    padding: 32px 15px;
     box-sizing: border-box;
 }
 .container {
@@ -16,12 +16,12 @@
     clear: both;
 }
 header {
-    margin-bottom: 20px;
+    padding: 8px;
+    margin-bottom: 40px;
 }
 .nav-logo {
     float: left;
     padding: 0;
-    margin: 0 auto;
 }
 .site-navigation {
     float: right;
@@ -29,13 +29,17 @@ header {
     padding: 0;
 }
 .navigation-item {
-    padding: 0 16px;
+    width: 90px;
+    text-align: center;
     display: inline-block;
+    margin-right: 2px;
 }
 .navigation-item:last-child {
-    padding-right: 0px;
+    margin-right: 0;
 }
 .nav-link {
+    display: block;
+    padding: 5px;
     color: #0f0101;
     text-decoration: none;
     text-transform: uppercase;
@@ -49,11 +53,9 @@ color: #1abc9c;
 .headline {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    margin: 0 auto 90px auto;
+    margin: 0 0 116px 0;
     text-align: center;
-    padding: 20px 0;
     font-size: 48px;
-    line-height: 48px;
     font-weight: 600;
     color: #515151;
     position: relative;
@@ -65,23 +67,21 @@ color: #1abc9c;
     width: 164px;
     position: absolute;
     left: 50%;
-    bottom: -14px;
+    bottom: -30px;
     transform: translate(-50%, -50%);
 }
 .item-card {
     box-sizing: border-box;
     float: left;
-    width: 285px;
-    padding: 15px;
+    width: 255px;
+    margin: 0 30px 30px 0;
     font-family: 'Roboto', sans-serif;
 }
-button {
-    width: 100%;
-    text-align: left;
-    display: block;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+.item-card:nth-child(4n+4) {
+    margin-right: 0;
+}
+.item-card:nth-child(n+4) {
+    margin-bottom: 0;
 }
 img {
     display: block;
@@ -114,6 +114,11 @@ img {
 .item-price::before {
     content: '\0024';
 }
-.wrapper {
-    margin: 0 -15px 62px -15px;
+.products {
+    margin-bottom: 96px;
+}
+.slider {
+    display: block;
+    min-height: 600px;
+    background-image: url(/IMG/banner.png) no-repeat center center fixed;
 }
