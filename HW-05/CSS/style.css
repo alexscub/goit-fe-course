@@ -1,7 +1,7 @@
 .nav-container {
     width: 1140px;
     margin: 0 auto;
-    padding: 32px 15px;
+    padding: 32px 16px;
     box-sizing: border-box;
 }
 .container {
@@ -17,11 +17,22 @@
 }
 header {
     padding: 8px;
-    margin-bottom: 40px;
 }
 .nav-logo {
     float: left;
     padding: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: #555252;
+    font-size: 30px;
+    line-height: 24px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.nav-logo::first-letter
+{
+    font-weight: 900;
+    color: #1abc9c;
 }
 .site-navigation {
     float: right;
@@ -39,13 +50,13 @@ header {
 }
 .nav-link {
     display: block;
-    padding: 5px;
+    padding: 4px;
     color: #0f0101;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    font-weight: 900;
+    font-weight: 700;
 }
 .nav-link:hover, .nav-link:focus {
 color: #1abc9c;
@@ -53,7 +64,7 @@ color: #1abc9c;
 .headline {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
-    margin: 0 0 116px 0;
+    margin: 0 0 116px;
     text-align: center;
     font-size: 48px;
     font-weight: 600;
@@ -74,14 +85,12 @@ color: #1abc9c;
     box-sizing: border-box;
     float: left;
     width: 255px;
-    margin: 0 30px 30px 0;
+    margin-right: 30px;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
-.item-card:nth-child(4n+4) {
+.item-card:last-child {
     margin-right: 0;
-}
-.item-card:nth-child(n+4) {
-    margin-bottom: 0;
 }
 img {
     display: block;
@@ -101,6 +110,7 @@ img {
     float: left;
     width: 202px;
     padding: 10px;
+    font-weight: 700;
 }
 .item-price {
     box-sizing: border-box;
@@ -110,6 +120,7 @@ img {
     background: #8c8c8c;
     width: 53px;
     padding: 10px;
+    font-weight: 700;
 }
 .item-price::before {
     content: '\0024';
@@ -118,7 +129,53 @@ img {
     margin-bottom: 96px;
 }
 .slider {
-    display: block;
+    width: 100%;
     min-height: 600px;
-    background-image: url(/IMG/banner.png) no-repeat center center fixed;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+.ctrl {
+    height: 600px;
+    width: 1140px;
+    padding: 15px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slider-ctrl {
+    display: inline-block;
+    position: absolute;
+    background: #1abc9c;
+    width: 104px;
+    height: 104px;
+    border: none;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 60px;
+    line-height: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.slider-prew {
+    left: 0;
+}
+.slider-next {
+    right: 0;
+}
+.slides {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+.slides img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
 }
