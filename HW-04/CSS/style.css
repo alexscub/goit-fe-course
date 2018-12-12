@@ -97,7 +97,7 @@ color: #1abc9c;
     margin-bottom: 30px;
 }
 .products-row:last-child {
-    margin-bottom: o;
+    margin-bottom: 0;
 }
 img {
     display: block;
