@@ -19,13 +19,13 @@ main {
     clear: both;
 }
 .nav-logo {
+    display: block;
     float: left;
     padding: 0;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     color: #555252;
     font-size: 30px;
-    line-height: 24px;
     text-decoration: none;
     font-weight: 300;
 }
@@ -37,7 +37,7 @@ main {
 .site-navigation {
     float: right;
     margin: 0 auto;
-    padding: 0;
+    padding: 4px 0 0 0;
 }
 .navigation-item {
     width: 90px;
@@ -61,11 +61,14 @@ main {
 .nav-link:hover, .nav-link:focus {
 color: #1abc9c;
 }
+header {
+    margin: 0 0 84px 0;
+    background-color: rgb(233, 240, 253);
+}
 .slider {
     width: 100%;
     min-height: 600px;
     position: relative;
-    margin: 0 0 84px 0;
     box-sizing: border-box;
 }
 .ctrl {
@@ -85,17 +88,20 @@ color: #1abc9c;
     width: 103px;
     height: 103px;
     border: none;
-    opacity: 0.9;
+    opacity: 0.6;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     padding: 0;
 }
+.slider-ctrl:hover {
+    opacity: 1;
+}
 .slider-prew {
-    left: 0;
+    left: 6px;
 }
 .slider-next {
-    right: 0;
+    right: 6px;
 }
 .slides {
     padding: 0;
@@ -268,10 +274,6 @@ img {
     padding: 10px;
     font-weight: 700;
 }
-/* .products {
-    margin-bottom: 96px;
-} */
-
 footer {
 background: rgb(50, 50, 50);
 text-align: center;
