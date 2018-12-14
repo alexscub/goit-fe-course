@@ -40,7 +40,7 @@ main {
     padding: 4px 0 0 0;
 }
 .navigation-item {
-    width: 90px;
+    width: 96px;
     text-align: center;
     display: inline-block;
     margin-right: 2px;
@@ -62,7 +62,7 @@ main {
 color: #1abc9c;
 }
 header {
-    margin: 0 0 84px 0;
+    margin: 0;
     background-color: rgb(233, 240, 253);
 }
 .slider {
@@ -82,14 +82,13 @@ header {
     transform: translateX(-50%);
 }
 .slider-ctrl {
-    display: inline-block;
     position: absolute;
     background: #1abc9c;
     width: 103px;
     height: 103px;
     border: none;
     opacity: 0.6;
-    top: 50%;
+    top: 49%;
     transform: translateY(-50%);
     cursor: pointer;
     padding: 0;
@@ -108,18 +107,13 @@ header {
     margin: 0;
     width: 100%;
     list-style: none;
-    position: absolute;
-    top: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 .slides img {
     height: 600px;
     width: 100%;
     object-fit: cover;
-}
-.slides-list {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
 }
 .slider_head {
     width: 790px;
@@ -140,6 +134,7 @@ header {
 .headline {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    padding-top: 86px;
     margin: 0 0 116px;
     text-align: center;
     font-size: 48px;
@@ -179,8 +174,16 @@ header {
     opacity: 0;
     position: absolute;
 }
-.overlay-button {
+.card-control {
     position: absolute;
+    left: 50%;
+    top: 142px;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 170px;
+}
+
+.overlay-button {
     border: #ffffff 1px solid;
     width: 50px;
     height: 50px;
@@ -188,6 +191,10 @@ header {
     cursor: pointer;
     padding: 0;
     opacity: 0;
+    margin: 0 4px 6px 0;
+}
+.overlay-button:nth-child(3) {
+    margin-right: 0;
 }
 .overlay-button:hover {
     background-color: rgb(26, 188, 156, 1);
@@ -197,32 +204,15 @@ header {
     background-color: rgb(26, 188, 156, 1);
     border-color:  rgb(26, 188, 156, 1);
 }
-.overlay-button1 {
-    top: 80px;
-    left: 46px;
-}
-.overlay-button2 {
-    left: 50%;
-    top: 80px;
-    transform: translateX(-50%);
-}
-.overlay-button3 {
-    top: 80px;
-    right: 46px;
-}
 .overlay-add-to-cart {
     padding: 0;
     cursor: pointer;
     color: #ffffff;
     text-transform: uppercase;
-    position: absolute;
     border: #ffffff 1px solid;
     width: 166px;
     height: 50px;
     background-color: rgb(50, 50, 50);
-    left: 50%;
-    top: 136px;
-    transform: translateX(-50%);
     opacity: 0;
 }
 .overlay-add-to-cart img {
