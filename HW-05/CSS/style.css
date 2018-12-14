@@ -7,10 +7,10 @@
 main {
     background-color: rgb(233, 240, 253);
 }
-.wrapper {
+.products {
     width: 1124px;
     margin: 0 auto;
-    padding: 6px 6px 82px 6px;
+    padding: 6px 6px 96px 6px;
     box-sizing: border-box;
 }
 .clearfix::after {
@@ -59,7 +59,7 @@ main {
     font-weight: 700;
 }
 .nav-link:hover, .nav-link:focus {
-color: #1abc9c;
+    color: #1abc9c;
 }
 header {
     margin: 0;
@@ -266,16 +266,14 @@ img {
 footer {
 background: rgb(50, 50, 50);
 text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+color: #fefefe;
+padding: 30px 6px;
 }
-.wrapper:last-child {
-    padding-bottom: 96px;
-}
-.autors {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: #fefefe;
-    padding: 30px 6px;
-}
-.autors span {
+footer span {
     color: #46bfa9;
+}
+footer p {
+    margin: 0;
 }
