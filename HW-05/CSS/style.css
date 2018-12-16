@@ -37,13 +37,12 @@ main {
 .site-navigation {
     float: right;
     margin: 0 auto;
-    padding: 4px 0 0 0;
+    padding: 4px 0;
 }
 .navigation-item {
-    width: 96px;
+    width: 100px;
     text-align: center;
     display: inline-block;
-    margin-right: 2px;
 }
 .navigation-item:last-child {
     margin-right: 0;
@@ -63,8 +62,6 @@ main {
 }
 header {
     margin: 0;
-}
-.slider {
     width: 100%;
     min-height: 600px;
     position: relative;
@@ -105,30 +102,35 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
-    list-style: none;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
-}
-.slides img {
     height: 600px;
-    width: 100%;
-    object-fit: cover;
+    background: url(../IMG/banner.png) no-repeat;
+    background-size: cover;
 }
-.slider_head {
+
+h1 {
+    font-family: 'Roboto', sans-serif;
     width: 790px;
     font-weight: 900;
     font-size: 60px;
+    text-transform: uppercase;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
 }
-.slider_desc {
-    display: block;
+h3 {
+    font-family: 'Roboto', sans-serif;
+    width: 790px;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
     font-weight: 300;
     font-size: 24px;
-    line-height: 3em;
 }
 .headline {
     font-family: 'Roboto', sans-serif;
@@ -183,6 +185,7 @@ header {
 }
 
 .overlay-button {
+    display: inline-block;
     border: #ffffff 1px solid;
     width: 50px;
     height: 50px;
@@ -190,7 +193,7 @@ header {
     cursor: pointer;
     padding: 0;
     opacity: 0;
-    margin: 0 4px 6px 0;
+    margin: 0 8px 8px 0;
 }
 .overlay-button:nth-child(3) {
     margin-right: 0;
