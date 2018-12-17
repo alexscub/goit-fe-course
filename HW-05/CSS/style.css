@@ -10,7 +10,7 @@ main {
 .products {
     width: 1124px;
     margin: 0 auto;
-    padding: 6px 6px 96px 6px;
+    padding: 6px 6px 96px;
     box-sizing: border-box;
 }
 .clearfix::after {
@@ -62,20 +62,12 @@ main {
 }
 header {
     margin: 0;
+    padding: 0;
     width: 100%;
-    min-height: 600px;
-    position: relative;
-    box-sizing: border-box;
-}
-.ctrl {
     height: 600px;
-    width: 1124px;
-    padding: 6px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    background: url(../IMG/banner.png) no-repeat;
+    background-size: cover;
 }
 .slider-ctrl {
     position: absolute;
@@ -99,13 +91,13 @@ header {
     right: 6px;
 }
 .slides {
-    padding: 0;
-    margin: 0;
-    width: 100%;
     color: #fff;
     height: 600px;
-    background: url(../IMG/banner.png) no-repeat;
-    background-size: cover;
+    width: 1112px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 h1 {
@@ -118,7 +110,7 @@ h1 {
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
+    margin: 0;
 }
 h3 {
     font-family: 'Roboto', sans-serif;
@@ -128,7 +120,7 @@ h3 {
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
+    margin: 0;
     font-weight: 300;
     font-size: 24px;
 }
@@ -182,6 +174,7 @@ h3 {
     transform: translate(-50%, -50%);
     margin: 0;
     width: 170px;
+    opacity: 0;
 }
 
 .overlay-button {
@@ -192,7 +185,6 @@ h3 {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
-    opacity: 0;
     margin: 0 8px 8px 0;
 }
 .overlay-button:nth-child(3) {
@@ -215,7 +207,6 @@ h3 {
     width: 166px;
     height: 50px;
     background-color: rgb(50, 50, 50);
-    opacity: 0;
 }
 .overlay-add-to-cart img {
     vertical-align: middle;
@@ -230,7 +221,7 @@ h3 {
 img {
     display: block;
 }
-.item-card:hover .overlay-button {
+.item-card:hover .card-control {
     opacity: 1;
 }
 .item-card:hover .overlay-add-to-cart {
@@ -267,12 +258,13 @@ img {
     font-weight: 700;
 }
 footer {
-background: rgb(50, 50, 50);
-text-align: center;
-font-family: 'Open Sans', sans-serif;
-font-size: 16px;
-color: #fefefe;
-padding: 30px 6px;
+    background: rgb(50, 50, 50);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #fefefe;
+    padding: 30px 6px;
+    line-height: 1.5;
 }
 footer span {
     color: #46bfa9;

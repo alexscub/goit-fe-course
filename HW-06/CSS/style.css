@@ -35,6 +35,7 @@
 .navigation-item {
     width: 100px;
     text-align: center;
+    cursor: pointer;
 }
 .nav-link {
     text-decoration: none;
@@ -44,14 +45,14 @@
     color: rgb(149, 225, 211);
     position: relative;
 }
-.nav-link:hover, .nav-link:focus {
+.navigation-item:hover .nav-link {
     transition-duration: 0.2s;
     transition-timing-function: linear;
     color: rgb(243, 129, 129);
 }
 .nav-link::after {
     content: '';
-    background: rgb(243, 129, 129);
+    background: rgb(149, 225, 211);
     height: 3px;
     width: 100%;
     position: absolute;
@@ -61,6 +62,7 @@
     opacity: 0;
 }
 .navigation-item:hover .nav-link::after {
+    background: rgb(243, 129, 129);
     transition-duration: 0.2s;
     transition-timing-function: linear;
     opacity: 1;
@@ -172,11 +174,14 @@
     position:absolute;
     left:0; top:0;
     width: 380px;
-    height: 0;
+    height: 470px;
     background: linear-gradient(to bottom,  rgb(243, 129, 129, 0.8) 0%,rgba(252, 227, 138, 0.8) 100%);
+    opacity: 0;
 }
 .img-gradient:hover::after {
-    height: 470px;
+    opacity: 1;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 .img-gradient:hover {
     transition-duration: 0.2s;
@@ -186,6 +191,8 @@
 }
 .img-gradient:hover .team-socials {
     opacity: 1;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
 }
 .facebook {
     background: url(../IMG/facebook.png);
@@ -219,4 +226,8 @@
     align-content: center;
     z-index: 1;
     opacity: 0;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
 }
