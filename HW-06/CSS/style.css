@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
-    
 }
 
 .container {
@@ -191,6 +190,7 @@
 }
 .img-gradient:hover .team-socials {
     opacity: 1;
+    transition-delay: 0.2s;
     transition-duration: 0.2s;
     transition-timing-function: linear;
 }
