@@ -1,23 +1,17 @@
-.nav-container {
-    width: 1200px;
-    min-height: 72px;
-    margin: 0 auto;
-    box-sizing: border-box;
+header {
+    padding: 24px 0;
+}
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
 }
-
 .container {
-    width: 1200px;
+    width: 1212px;
     margin: 0 auto;
     box-sizing: border-box;
-}
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+    padding: 0 6px;
 }
 .nav-logo {
     text-decoration: none;
@@ -73,12 +67,12 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 30px;
-    margin: 0 0 110px 0;
+    margin: 0 0 80px 0;
+    line-height: 1.5;
 }
 .headline span {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
-
 }
 .headline::after {
     content: '';
@@ -92,25 +86,44 @@
 }
 .features-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 }
 .features {
     list-style-type: none;
-    width: 382px;
+    width: 376px;
     display: flex;
     margin-bottom: 96px;
 }
 .features:nth-child(n+4) {
     margin-bottom: 0;
 }
-.features img {
+.service-icon{
     padding-right: 28px;
     flex: none;
     width: 36px;
     height: 36px;
+    background-repeat: no-repeat;
+}
+.icon1 {
+    background-image: url(../IMG/service1.png);
+}
+.icon2 {
+    background-image: url(../IMG/service2.png);
+}
+.icon3 {
+    background-image: url(../IMG/service3.png);
+}
+.icon4 {
+    background-image: url(../IMG/service4.png);
+}
+.icon5 {
+    background-image: url(../IMG/service5.png);
+}
+.icon6 {
+    background-image: url(../IMG/service6.png);
 }
 .features-text {
     flex: auto;
@@ -131,10 +144,13 @@
 }
 .section_text {
     text-align: center;
-    margin: 0;
+    margin: 0 auto 90px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #999999;
+    width: 960px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
 }
 .our_team {
     display: flex;
@@ -149,6 +165,8 @@
     font-size: 14px;
     color: #333333;
     text-align: center;
+    margin: 0 0 10px;
+    text-transform: uppercase;
 }
 .team_card p {
     font-family: 'Montserrat', sans-serif;
@@ -158,6 +176,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
+    margin: 0;
 }
 .photo{
     display: block;
@@ -167,6 +186,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
 .img-gradient::after {
     content:'';
@@ -227,7 +247,53 @@
     z-index: 1;
     opacity: 0;
 }
-footer {
+main {
+    padding: 80px 0;
+}
+section {
+    margin-bottom: 60px;
+}
+section:last-child {
+    margin-bottom: 0;
+}
+.foot {
+    padding: 12px 6px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    border-top: #cccccc 1px solid;
+}
+.foot p {
+    margin: 0;
+    padding: 10px 0;
+    letter-spacing: -0.07em;
+}
+.foot span {
+    color: #f38181;
+}
+.input-email {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    color: #cccccc;
+    padding: 10px;
+    width: 230px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    display: inline-block;
+}
+.subscribe-button {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    color: #ffffff;
+    background-color: rgba(149, 225, 211);
+    border: none;
+    width: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 12px;
 }
