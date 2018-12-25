@@ -261,7 +261,7 @@ img {
 main {
     padding: 90px 0;
 }
-.foot {
+footer {
     padding: 12px 0 12px;
     display: flex;
     justify-content: space-between;
@@ -269,11 +269,11 @@ main {
     border-top: #cccccc 1px solid;
     align-items: center;
 }
-.foot p {
+footer p {
     margin: 0;
     letter-spacing: -0.07em;
 }
-.foot span {
+footer span {
     color: #f38181;
 }
 
