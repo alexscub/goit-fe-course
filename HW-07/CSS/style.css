@@ -169,40 +169,46 @@ nav{
     color: #ffffff;
 }
 input {
-    text-transform: uppercase;
     color: #bbbbbb;
     border: none;
     padding: 18px;
     width: 456px;
     box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
 }
-input:required:valid {
-    outline: 5px solid green;
-
+input::placeholder {
+    text-transform: uppercase;
+    color: #bbbbbb;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
 }
-textarea:required:valid {
-    outline: 5px solid green;
+textarea::placeholder {
+    text-transform: uppercase;
+    color: #bbbbbb;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
 }
-input:required:invalid {
-    outline: 5px solid red;
-
-}
-textarea:required:invalid {
-    outline: 5px solid red;
-}
+input:required:invalid:not(:placeholder-shown) { outline: 2px solid red;}
+input:required:valid:not(:placeholder-shown) { outline: 2px solid green;}
+textarea:required:invalid:not(:placeholder-shown) { outline: 2px solid red;}
+textarea:required:valid:not(:placeholder-shown) { outline: 2px solid green;}
 .input_section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 }
 textarea {
-    text-transform: uppercase;
     color: #bbbbbb;
     border: none;
     padding: 18px;
     width: 456px;
     box-sizing: border-box;
     resize: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
 }
 .input_col {
     display: flex;
