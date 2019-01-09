@@ -268,4 +268,7 @@ header {
     .cards {
         width: 100%;
     }
+    header {
+        background-size: cover;
+    }
 }
