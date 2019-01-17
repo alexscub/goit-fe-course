@@ -1,0 +1,276 @@
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url('../fonts/montserrat-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v12-latin-700.woff') format('woff'); /* Modern Browsers */
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url('../fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v12-latin-regular.woff') format('woff'); /* Modern Browsers */
+  }
+  /* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+.container {
+    width: 320px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+header {
+    background-image: url(../IMG/homework-08_Desktop.png);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 136px;
+}
+.navigation {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+}
+.menu {
+    padding: 20px 0;
+}
+.menu_item {
+    width: 90px;
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border-color: transparent;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.menu_item:hover {
+    border: 2px #ffffff solid;
+    border-radius: 20px;
+}
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 96px 0 28px 0;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    display: block;
+}
+.logo:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.heading {
+    width: 294px;
+    margin: 0 auto;
+}
+.title {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.07em;
+}
+.text_after_title {
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto 16px;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    width: 230px;
+}
+.main_button {
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    width: 280px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 22px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: rgb(255, 78, 80);
+    border: none;
+}
+.partners {
+    padding: 70px 0 60px;
+}
+.section_title {
+    color: #333333;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 0 18px;
+}
+.photo_card {
+    margin-bottom: 30px;
+}
+.photo_card:last-child {
+    margin-bottom: 0;
+}
+.cards {
+    margin: 0 auto 26px;
+}
+.photo {
+    width: 120px;
+    height: 120px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    position: relative;
+}
+.photo1 {
+    background-image: url(../IMG/photo1.png);
+}
+.photo2 {
+    background-image: url(../IMG/photo2.png);
+}
+.photo3 {
+    background-image: url(../IMG/photo3.png);
+}
+.photo4 {
+    background-image: url(../IMG/photo4.png);
+}
+.photo::after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    bottom: 0;
+    right: 0;
+}
+.photo1::after {
+    background-color: #ff4e50;
+    background-image: url(../IMG/icon1.png);
+}
+.photo2::after {
+    background-color: rgb(255, 165, 7);
+    background-image: url(../IMG/icon2.png);
+}
+.photo3::after {
+    background-color: rgb(28, 215, 173);
+    background-image: url(../IMG/icon3.png);
+}
+.photo4::after {
+    background-color: rgb(78, 115, 219);
+    background-image: url(../IMG/icon4.png);
+}
+.name {
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 16px;
+}
+.description {
+    margin: 0;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.button_more {
+    color: #ff4e50;
+    border: 2px solid #ff4e50;
+    background: #ffffff;
+}
+@media (min-width: 768px) {
+    .container{
+        width: 768px;
+        padding: 40px 0;
+    }
+    .text_after_title {
+        width: 100%;
+    }
+    .photo_card {
+        margin-bottom: 0;
+        min-height: 260px;
+    }
+    /* .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto 10px;
+    } */
+    .heading {
+        width: 492px;
+    }
+    header {
+        padding-bottom: 230px;
+    }
+    .main_button {
+        width: 226px;
+    }
+    .button_more {
+        width: 192px;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .logo, .menu {
+        padding: 0;
+        margin: 0;
+    }
+    .partners {
+        padding-top: 70px;
+    }
+    .title {
+        font-size: 52px;
+        width: 500px;
+        margin: 0 auto 26px;
+        letter-spacing: -0.03em;
+    }
+    .text_after_title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .order {
+        order: -1;
+    }
+    .section_title {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 992px;
+    }
+}
