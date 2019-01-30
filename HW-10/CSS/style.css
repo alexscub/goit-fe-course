@@ -60,7 +60,7 @@
     transition-duration: 0.2s;
     transition-timing-function: linear;
 }
-.site-navigation__item:hover .nav-link {
+.site-navigation__item:hover .site-navigation__link {
     transition-duration: 0.2s;
     transition-timing-function: linear;
     color: #fce38a;
