@@ -17,70 +17,78 @@
 <body>
     <header class="header">
         <nav class="container nav">
-            <a class="site-logo" href="#">MoGo</a>
-            <ul class="site-navigation">
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">about</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">service</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">work</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">blog</a></li>
-                <li class="site-navigation__item"><a class="site-navigation__link" href="#">contact</a></li>
-                <li class="site-navigation__item"><button type="button" class="site-navigation__button"><svg>
-                            <use href="IMG/icons/sprite.svg#icon_cart"></use>
-                        </svg></button></li>
-                <li class="site-navigation__item"><button type="button" class="site-navigation__button"><svg>
-                            <use href="IMG/icons/sprite.svg#icon_search"></use>
-                        </svg></button></li>
+            <div class="main-nav">
+            <a class="logo" href="#">MoGo</a>
+            <ul class="nav-menu">
+                <li class="nav-menu__item"><a class="site-navigation__link" href="#">about</a></li>
+                <li class="nav-menu__item"><a class="site-navigation__link" href="#">service</a></li>
+                <li class="nav-menu__item"><a class="site-navigation__link" href="#">work</a></li>
+                <li class="nav-menu__item"><a class="site-navigation__link" href="#">blog</a></li>
+                <li class="nav-menu__item"><a class="site-navigation__link" href="#">contact</a></li>
             </ul>
+        </div>
+        <div>
+            <button type="button" class="menu__button"><svg>
+                    <use href="IMG/icons/sprite.svg#icon_cart"></use>
+                </svg></button><button type="button" class="menu__button"><svg>
+                    <use href="IMG/icons/sprite.svg#icon_search"></use>
+                </svg></button>
+            </div>
         </nav>
-        <p class="header__paragraph">Creative Template</p>
+        <p class="header__subtitle">Creative Template</p>
         <h1 class="header__title">welcome to mogo</h1>
-        <button type="button" class="header__button">learn more</button>
+        <button type="button" class="button">learn more</button>
     </header>
     <main class="container">
         <section>
-            <p class="section__subtitle">We work with</p>
-            <h2 class="section__title">amazing services</h2>
-            <ul class="features">
+            <p class="subtitle">We work with</p>
+            <h2 class="title">amazing services</h2>
+            <ul class="features-list">
                 <li class="features__item icon1">
                     <h3 class="features__item-title">photography</h3>
-                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
                 </li>
                 <li class="features__item icon2">
                     <h3 class="features__item-title">web design</h3>
-                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
                 </li>
                 <li class="features__item icon3">
                     <h3 class="features__item-title">creativity</h3>
-                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
                 </li>
                 <li class="features__item icon4">
                     <h3 class="features__item-title">seo</h3>
-                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
                 </li>
                 <li class="features__item icon5">
                     <h3 class="features__item-title">css/html</h3>
-                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
                 </li>
                 <li class="features__item icon6">
                     <h3 class="features__item-title">digital</h3>
-                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="features__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor.</p>
                 </li>
             </ul>
         </section>
         <section>
-            <p class="section__subtitle">Who we are</p>
-            <h2 class="section__title">meet our team</h2>
-            <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <p class="subtitle">Who we are</p>
+            <h2 class="title">meet our team</h2>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <div class="team">
-                <div class="team__card">
+            <div class="team-galery">
+                <div class="team-galery__card">
                     <div class="back"></div>
-                    <div class="team__card-photo">
-                        <img class="team__card-img" srcset="IMG/photos/team1.jpg 380w, IMG/photos/team1@2x.jpg 760w" src="IMG/photos/team1.jpg"
-                        sizes="380px"
-                        alt="Matthew Dix">
+                    <div class="team-galery__card-photo">
+                        <img class="team-galery__card-img" srcset="IMG/photos/team1.jpg 380w, IMG/photos/team1@2x.jpg 760w"
+                            src="IMG/photos/team1.jpg" sizes="380px" alt="Matthew Dix">
                         <div class="socials">
                             <a href="#" class="social__link"> <svg class="social__icon">
                                     <use href="./IMG/icons/sprite.svg#icon_facebook"></use>
@@ -97,15 +105,14 @@
                             </a>
                         </div>
                     </div>
-                    <h3 class="team__card-name">Matthew Dix</h3>
-                    <p class="team__card-occupation">Graphic Design</p>
+                    <h3 class="team-galery__card-name">Matthew Dix</h3>
+                    <p class="team-galery__card-occupation">Graphic Design</p>
                 </div>
-                <div class="team__card">
+                <div class="team-galery__card">
                     <div class="back"></div>
-                    <div class="team__card-photo">
-                        <img class="team__card-img" srcset="IMG/photos/team2.jpg 380w, IMG/photos/team2@2x.jpg 760w" src="IMG/photos/team2.jpg" 
-                        sizes="380px" 
-                        alt="Christopher Campbell">
+                    <div class="team-galery__card-photo">
+                        <img class="team-galery__card-img" srcset="IMG/photos/team2.jpg 380w, IMG/photos/team2@2x.jpg 760w"
+                            src="IMG/photos/team2.jpg" sizes="380px" alt="Christopher Campbell">
                         <div class="socials">
                             <a href="#" class="social__link"> <svg class="social__icon">
                                     <use href="IMG/icons/sprite.svg#icon_facebook"></use>
@@ -122,15 +129,14 @@
                             </a>
                         </div>
                     </div>
-                    <h3 class="team__card-name">Christopher Campbell</h3>
-                    <p class="team__card-occupation">Branding/UX design</p>
+                    <h3 class="team-galery__card-name">Christopher Campbell</h3>
+                    <p class="team-galery__card-occupation">Branding/UX design</p>
                 </div>
-                <div class="team__card">
+                <div class="team-galery__card">
                     <div class="back"></div>
-                    <div class="team__card-photo">
-                        <img class="team__card-img" srcset="IMG/photos/team3.jpg 380w, IMG/photos/team3@2x.jpg 760w" src="IMG/photos/team2.jpg" 
-                        sizes="380px"
-                        alt="Michael Fertig">
+                    <div class="team-galery__card-photo">
+                        <img class="team-galery__card-img" srcset="IMG/photos/team3.jpg 380w, IMG/photos/team3@2x.jpg 760w"
+                            src="IMG/photos/team2.jpg" sizes="380px" alt="Michael Fertig">
                         <div class="socials">
                             <a href="#" class="social__link"> <svg class="social__icon">
                                     <use href="./IMG/icons/sprite.svg#icon_facebook"></use>
@@ -147,16 +153,17 @@
                             </a>
                         </div>
                     </div>
-                    <h3 class="team__card-name">Michael Fertig</h3>
-                    <p class="team__card-occupation">Developer</p>
+                    <h3 class="team-galery__card-name">Michael Fertig</h3>
+                    <p class="team-galery__card-occupation">Developer</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="container footer">
+    <footer class="container">
         <p class="footer__copyright">© 2016 MoGo free PSD template by <span class="footer__autor">Laaqiq</span></p>
         <form action="#">
-            <input class="subscribe-email" type="email" placeholder="Your Email..."><button class="subscribe-button" type="submit">subscribe</button>
+            <input class="subscribe-email" type="email" placeholder="Your Email..."><button class="subscribe-button"
+                type="submit">subscribe</button>
         </form>
     </footer>
 

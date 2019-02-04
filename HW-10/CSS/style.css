@@ -28,13 +28,25 @@
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 166px;
 }
-.site-logo {
+.main-nav {
+    width: 1132px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.logo {
     text-decoration: none;
     font-weight: 700;
     font-size: 30px;
     color: #ffffff;
 }
-.site-navigation {
+.nav-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,7 +54,7 @@
     margin: 0;
     padding: 0;
 }
-.site-navigation__item {
+.nav-menu__item {
     width: 100px;
     text-align: center;
     cursor: pointer;
@@ -55,19 +67,22 @@
     color: #ffffff;
     position: relative;
 }
-.site-navigation__button{
-    display: inline-block;
+.menu__button {
     border: none;
     background: transparent;
     cursor: pointer;
+    padding: 0 6px;
+    width: 36px;
+    height: 16px;
 }
-.site-navigation__button svg {
+.menu__button svg {
     display: block;
     fill: #ffffff;
     width: 16px;
     height: 16px;
 }
-.site-navigation__item:hover .site-navigation__button svg {
+
+.menu__button:hover svg {
     fill: #fce38a;
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
@@ -76,7 +91,7 @@
          -o-transition-timing-function: linear;
             transition-timing-function: linear;
 }
-.site-navigation__item:hover .site-navigation__link {
+.nav-menu__item:hover .site-navigation__link {
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
             transition-duration: 0.2s;
@@ -98,7 +113,7 @@
             transform: translate(-50%, -50%);
     opacity: 0;
 }
-.site-navigation__item:hover .site-navigation__link::after {
+.nav-menu__item:hover .site-navigation__link::after {
     background: #fce38a;
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
@@ -108,7 +123,7 @@
             transition-timing-function: linear;
     opacity: 1;
 }
-.header__paragraph {
+.header__subtitle {
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 72px;
@@ -126,7 +141,7 @@
     margin: 0 auto 110px;
     max-width: 820px;
 }
-.header__button {
+.button {
     text-transform: uppercase;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
@@ -141,7 +156,7 @@
     display: block;
     margin: 0 auto;
 }
-.section__title {
+.title {
     text-transform: uppercase;
     text-align: center;
     position: relative;
@@ -152,13 +167,13 @@
     margin: 0 0 80px 0;
     line-height: 1.5;
 }
-.section__subtitle {
+.subtitle {
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     margin: 0 0 10px 0;
 }
-.headline::after {
+.title::after {
     content: '';
     background: rgb(243, 129, 129);
     height: 3px;
@@ -170,7 +185,7 @@
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
-.features {
+.features-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -232,7 +247,7 @@
     color: #999999;
     font-family: 'Roboto', sans-serif;
 }
-.section__text {
+.text {
     text-align: center;
     margin: 0 auto 90px;
     font-family: 'Roboto', sans-serif;
@@ -242,7 +257,7 @@
     line-height: 1.5;
     letter-spacing: -0.02em;
 }
-.team {
+.team-galery {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -250,12 +265,12 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
-.team__card{
+.team-galery__card{
     width: 380px;
     cursor: pointer;
     position: relative;
 }
-.team__card-name {
+.team-galery__card-name {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -264,7 +279,7 @@
     margin: 0 0 10px;
     text-transform: uppercase;
 }
-.team__card-occupation {
+.team-galery__card-occupation {
     font-size: 15px;
     color: #999999;
     text-align: center;
@@ -282,7 +297,7 @@
 img {
     display: block;
 }
-.team__card-photo::after {
+.team-galery__card-photo::after {
     content:'';
     position:absolute;
     left:0; top:0;
@@ -294,12 +309,12 @@ img {
     background: linear-gradient(to bottom,  rgb(243, 129, 129, 0.8) 0%,rgba(252, 227, 138, 0.8) 100%);
     opacity: 0;
 }
-.team__card-photo{
+.team-galery__card-photo{
     position: absolute;
     top: 0;
     left: 0;
 }
-.team__card-photo:hover .socials {
+.team-galery__card-photo:hover .socials {
     opacity: 1;
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
@@ -308,7 +323,7 @@ img {
          -o-transition-timing-function: linear;
             transition-timing-function: linear;
 }
-.team__card-photo:hover {
+.team-galery__card-photo:hover {
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
             transition-duration: 0.2s;
@@ -319,7 +334,7 @@ img {
         -ms-transform: translate( -10px, -10px);
             transform: translate( -10px, -10px);
 }
-.team__card-photo:hover::after{
+.team-galery__card-photo:hover::after{
     opacity: 1;
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
@@ -372,7 +387,7 @@ img {
 main {
     padding: 90px 0;
 }
-.footer {
+footer {
     padding: 12px 0 12px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -434,7 +449,7 @@ main {
     }
   }
   @media (max-width: 1212px) {
-      .nav, .site-navigation {
+      .nav, .nav-menu, .main-nav {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           -webkit-box-pack: center;
@@ -444,7 +459,10 @@ main {
         .nav {
             margin-bottom: 60px;
         }
-      .team {
+        .main-nav {
+            margin-bottom: 16px;
+        }
+      .team-galery {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
@@ -453,10 +471,10 @@ main {
               -ms-flex-align: center;
                   align-items: center;
       }
-      .team__card-occupation {
+      .team-galery__card-occupation {
           padding-bottom: 20px;
       }
-      .header__paragraph {
+      .header__subtitle {
         font-size:36px;
         margin:0 0 34px;
     }
@@ -468,22 +486,25 @@ main {
         padding-bottom: 60px
     }
   }
-  @media (max-width: 864px) {
-    .site-logo {
-        margin-bottom: 16px;}
-      .features {
-          min-height: 600px;
+  @media (max-width: 764px) {
+      .main-nav {
+          flex-direction: column;
       }
-    .site-navigation__item {  
+    .logo {
+        margin-bottom: 16px;}
+      .features-list {
+          min-height: 500px;
+      }
+    .nav-menu__item {  
         padding-bottom: 12px;
     }
     .site-navigation__link {
         font-size: 18px;
     }
-    .site-navigation__item:hover .site-navigation__link::after {
+    .nav-menu__item:hover .site-navigation__link::after {
         display: none;
     }
-    .team__card-photo:hover {
+    .team-galery__card-photo:hover {
         -webkit-transition-duration: 0.2s;
              -o-transition-duration: 0.2s;
                 transition-duration: 0.2s;
@@ -494,10 +515,10 @@ main {
             -ms-transform: translate( 0px, 0px);
                 transform: translate( 0px, 0px);
     }
-    .section__title, .section__text {
+    .title, .text {
         margin-bottom: 40px;
     }
-    .footer {
+    footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -509,14 +530,14 @@ main {
       .subscribe-email {
           width: 150px;
       }
-      .back, .team__card-photo, .team__card-img {
+      .back, .team-galery__card-photo, .team-galery__card-img {
           width: 320px;
           height: 380px;
         }
-        .team__card {
+        .team-galery__card {
             width: 320px;
         }
-        .team__card-photo::after {
+        .team-galery__card-photo::after {
             width: 320px;
             height: 380px;
         }
