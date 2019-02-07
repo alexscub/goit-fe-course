@@ -75,15 +75,15 @@ nav {
     padding: 0 6px;
     width: 36px;
     height: 16px;
+    &:hover svg {
+        fill: $hover-color;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+    }
 }
 .menu__button svg {
     display: block;
     fill: $header-text-color;
     width: 16px;
     height: 16px;
-    &:hover svg {
-    fill: $hover-color;
-    transition-duration: 0.2s;
-    transition-timing-function: linear;
-}
 }

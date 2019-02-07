@@ -486,17 +486,17 @@ nav {
   height: 16px;
 }
 
+.menu__button:hover svg {
+  fill: #fce38a;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
 .menu__button svg {
   display: block;
   fill: #ffffff;
   width: 16px;
   height: 16px;
-}
-
-.menu__button svg:hover svg {
-  fill: #fce38a;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
 }
 
 .container {
