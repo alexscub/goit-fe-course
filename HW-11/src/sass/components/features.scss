@@ -1,0 +1,57 @@
+.features-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    margin: 0;
+    min-height: 300px;
+}
+.features__item {
+    list-style-type: none;
+    width: 376px;
+    padding-left: 66px;
+    position: relative;
+            box-sizing: border-box;
+            &::before {
+                content: '';
+                width: 36px;
+                height: 36px;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }    
+}
+
+.icon1::before {
+    background-image: url(../IMG/icons/service1.svg);
+}
+.icon2::before {
+    background-image: url(../IMG/icons/service2.svg);
+}
+.icon3::before {
+    background-image: url(../IMG/icons/service3.svg);
+}
+.icon4::before {
+    background-image: url(../IMG/icons/service4.svg);
+}
+.icon5::before {
+    background-image: url(../IMG/icons/service5.svg);
+}
+.icon6::before {
+    background-image: url(../IMG/icons/service6.svg);
+}
+.features__item-title{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    margin: 0 0 20px 0;
+}
+.features__item-text {
+    margin: 0;
+    font-size: 15px;
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+}
