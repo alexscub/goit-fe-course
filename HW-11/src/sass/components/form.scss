@@ -1,0 +1,32 @@
+
+.subscribe-email {
+    font-family: $text-font;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    color: #cccccc;
+    vertical-align: middle;
+    width: 230px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    padding: 0 12px;
+    min-height: 40px;
+    @media (max-width: 380px) {
+    width: 150px;
+    }
+}
+.subscribe-button {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    color: #ffffff;
+    background-color: $primary-color;
+    border: none;
+    width: 150px;
+    box-sizing: border-box;
+    cursor: pointer;
+    vertical-align: middle;
+    min-height: 40px;
+}

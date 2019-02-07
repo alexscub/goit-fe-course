@@ -2,14 +2,27 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $title-font;
     margin-bottom: 166px;
+    @media (max-width: 1212px) {
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+    @media (max-width: 764px) {
+        justify-content: center;
+    }
 }
 .nav-menu {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    @media (max-width: 1212px) {
+        flex-wrap: wrap;
+    }
+    @media (max-width: 764px) {
+        justify-content: center;
+    }
 }
 .nav-menu__item {
     width: 100px;
@@ -18,25 +31,31 @@ nav {
         &:hover .site-navigation__link {
                 transition-duration: 0.2s;
                 transition-timing-function: linear;
-        color: #fce38a;
+        color: $hover-color;
+
     }
         &:hover .site-navigation__link::after {
-        background: #fce38a;
+        background: $hover-color;
         transition-duration: 0.2s;
         transition-timing-function: linear;
         opacity: 1;
+        @media (max-width: 764px) {
+            display: none;
+        }
     }
+    @media (max-width: 764px) {
+            padding-bottom: 12px;
+        }
 }
 .site-navigation__link {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
-    color: #ffffff;
+    color: $header-text-color;
     position: relative;
         &::after {
         content: '';
-        background: rgb(149, 225, 211);
         height: 3px;
         width: 100%;
         position: absolute;
@@ -45,6 +64,9 @@ nav {
         transform: translate(-50%, -50%);
         opacity: 0;
     }
+    @media (max-width: 764px) {
+            font-size: 18px;
+        }
 }
 .menu__button {
     border: none;
@@ -56,11 +78,11 @@ nav {
 }
 .menu__button svg {
     display: block;
-    fill: #ffffff;
+    fill: $header-text-color;
     width: 16px;
     height: 16px;
     &:hover svg {
-    fill: #fce38a;
+    fill: $hover-color;
     transition-duration: 0.2s;
     transition-timing-function: linear;
 }

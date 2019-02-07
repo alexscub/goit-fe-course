@@ -1,0 +1,19 @@
+footer {
+    padding: 12px 0 12px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $title-font;
+    border-top: #cccccc 1px solid;
+    align-items: center;
+    @media (max-width: 764px) {
+        flex-direction: column;
+        min-height: 100px;
+    }
+}
+.footer__copyright {
+    margin: 0;
+    letter-spacing: -0.07em;
+}
+.footer__autor{
+    color: #f38181;
+}
