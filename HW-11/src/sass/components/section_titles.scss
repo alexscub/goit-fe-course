@@ -8,6 +8,16 @@
     font-size: 30px;
     margin: 0 0 80px 0;
     line-height: 1.5;
+    &::after {
+        content: '';
+        background: $secondary-color;
+        height: 3px;
+        width: 60px;
+        position: absolute;
+        left: 50%;
+        bottom: -40px;
+        transform: translate(-50%, -50%);
+    }
     @media (max-width: 764px) {
         margin-bottom: 40px;
     }
@@ -17,14 +27,4 @@
     font-family: $sub-title-font;
     font-size: 24px;
     margin: 0 0 10px 0;
-}
-.title::after {
-    content: '';
-    background: $secondary-color;
-    height: 3px;
-    width: 60px;
-    position: absolute;
-    left: 50%;
-    bottom: -40px;
-    transform: translate(-50%, -50%);
 }

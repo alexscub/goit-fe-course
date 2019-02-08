@@ -23,26 +23,27 @@ nav {
     @media (max-width: 764px) {
         justify-content: center;
     }
-}
-.nav-menu__item {
-    width: 100px;
-    text-align: center;
-    cursor: pointer;
-        &:hover .site-navigation__link {
-                transition-duration: 0.2s;
-                transition-timing-function: linear;
-        color: $hover-color;
-
-    }
-        &:hover .site-navigation__link::after {
-        background: $hover-color;
-        transition-duration: 0.2s;
-        transition-timing-function: linear;
-        opacity: 1;
-        @media (max-width: 764px) {
-            display: none;
+    &__item {
+        width: 100px;
+        text-align: center;
+        cursor: pointer;
+            &:hover .site-navigation__link {
+                    transition-duration: 0.2s;
+                    transition-timing-function: linear;
+            color: $hover-color;
+    
         }
-    }
+            &:hover .site-navigation__link::after {
+            background: $hover-color;
+            transition-duration: 0.2s;
+            transition-timing-function: linear;
+            opacity: 1;
+            @media (max-width: 764px) {
+                display: none;
+            }
+        }
+}
+
     @media (max-width: 764px) {
             padding-bottom: 12px;
         }
@@ -75,15 +76,15 @@ nav {
     padding: 0 6px;
     width: 36px;
     height: 16px;
+    & svg {
+        display: block;
+        fill: $header-text-color;
+        width: 16px;
+        height: 16px;
+    }
     &:hover svg {
         fill: $hover-color;
         transition-duration: 0.2s;
         transition-timing-function: linear;
     }
-}
-.menu__button svg {
-    display: block;
-    fill: $header-text-color;
-    width: 16px;
-    height: 16px;
 }

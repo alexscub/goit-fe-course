@@ -5,35 +5,36 @@
         flex-direction: column;
         align-items: center;
     }
-}
-.team-galery__card{
-    width: 380px;
-    cursor: pointer;
-    position: relative;
-    @media (max-width: 380px) {
-        width: 320px;
+    &__card{
+        width: 380px;
+        cursor: pointer;
+        position: relative;
+        @media (max-width: 380px) {
+            width: 320px;
+        }
+        &-name {
+            font-family: $title-font;
+            font-weight: 500;
+            font-size: 14px;
+            color: $title-text-color;
+            text-align: center;
+            margin: 0 0 10px;
+            text-transform: uppercase;
+        }
+        &-occupation {
+            font-size: 15px;
+            color: $text-color;
+            text-align: center;
+            font-family: $text-font;
+            font-weight: 400;
+            font-style: italic;
+            margin: 0;
+            @media (max-width: 1212px) {
+                padding-bottom: 20px;
+            }
+        }
     }
-}
-.team-galery__card-name {
-    font-family: $title-font;
-    font-weight: 500;
-    font-size: 14px;
-    color: $title-text-color;
-    text-align: center;
-    margin: 0 0 10px;
-    text-transform: uppercase;
-}
-.team-galery__card-occupation {
-    font-size: 15px;
-    color: $text-color;
-    text-align: center;
-    font-family: $text-font;
-    font-weight: 400;
-    font-style: italic;
-    margin: 0;
-    @media (max-width: 1212px) {
-        padding-bottom: 20px;
-    }
+   
 }
 .back {
     width: 380px;

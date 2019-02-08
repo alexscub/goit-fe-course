@@ -14,7 +14,7 @@
     width: 376px;
     padding-left: 66px;
     position: relative;
-            box-sizing: border-box;
+    box-sizing: border-box;
             &::before {
                 content: '';
                 width: 36px;
@@ -23,7 +23,21 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-            }    
+            }
+            &-title{
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: $title-font;
+                font-weight: 400;
+                color: $title-text-color;
+                margin: 0 0 20px 0;
+            }
+            &-text {
+                margin: 0;
+                font-size: 15px;
+                color: $text-color;
+                font-family: $text-font;
+            }
 }
 .icon1::before {
     background-image: url(../images/icons/service1.svg);
@@ -42,18 +56,4 @@
 }
 .icon6::before {
     background-image: url(../images/icons/service6.svg);
-}
-.features__item-title{
-    text-transform: uppercase;
-    font-size: 14px;
-    font-family: $title-font;
-    font-weight: 400;
-    color: $title-text-color;
-    margin: 0 0 20px 0;
-}
-.features__item-text {
-    margin: 0;
-    font-size: 15px;
-    color: $text-color;
-    font-family: $text-font;
 }

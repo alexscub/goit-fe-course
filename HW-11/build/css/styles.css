@@ -486,17 +486,17 @@ nav {
   height: 16px;
 }
 
-.menu__button:hover svg {
-  fill: #fce38a;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-}
-
 .menu__button svg {
   display: block;
   fill: #ffffff;
   width: 16px;
   height: 16px;
+}
+
+.menu__button:hover svg {
+  fill: #fce38a;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .container {
@@ -531,13 +531,6 @@ nav {
   line-height: 1.5;
 }
 
-.subtitle {
-  text-align: center;
-  font-family: "Kaushan Script", cursive;
-  font-size: 24px;
-  margin: 0 0 10px 0;
-}
-
 .title::after {
   content: '';
   background: #f38181;
@@ -548,6 +541,13 @@ nav {
   bottom: -40px;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  margin: 0 0 10px 0;
 }
 
 .features-list {
@@ -577,6 +577,22 @@ nav {
   left: 0;
 }
 
+.features__item-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0 20px 0;
+}
+
+.features__item-text {
+  margin: 0;
+  font-size: 15px;
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+}
+
 .icon1::before {
   background-image: url(../images/icons/service1.svg);
 }
@@ -599,22 +615,6 @@ nav {
 
 .icon6::before {
   background-image: url(../images/icons/service6.svg);
-}
-
-.features__item-title {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #333333;
-  margin: 0 0 20px 0;
-}
-
-.features__item-text {
-  margin: 0;
-  font-size: 15px;
-  color: #999999;
-  font-family: "Roboto", sans-serif;
 }
 
 .team-galery {
@@ -853,7 +853,7 @@ main {
     display: none;
   }
 
-  .nav-menu__item {
+  .nav-menu {
     padding-bottom: 12px;
   }
 
