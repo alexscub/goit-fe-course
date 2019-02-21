@@ -9,7 +9,7 @@ let login = prompt('Введите логин!');
 //проверяем логин
 if (login === adminLogin) {
   //если логин совпал, просим пароль
-  let password = prompt('Введите пароль!')
+  const password = prompt('Введите пароль!')
   //проверяем пароль
   if (password === adminPassword) {
     alert(truePassword)
