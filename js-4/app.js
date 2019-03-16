@@ -48,7 +48,7 @@ function Cashier(name, productDatabase) {
   this.productDatabase = productDatabase;
   this.customerMoney = 0;
   this.getCustomerMoney = function (value) {
-    this.customerMoney += value;
+    this.customerMoney = value;
   }
   this.countTotalPrice = function (order) {
     const keys = Object.keys(order);
