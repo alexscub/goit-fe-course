@@ -115,10 +115,9 @@ console.log(getUsersByEyeColor(users, 'blue')); // [объект Moore Hensley, 
 /**
  * Получить массив имен пользователей по полу (поле gender)
  */
-const getUsersByGender = (arr, gender) => {
-  const objs = arr.filter(el => el.gender === gender);
-  return objs.map(el => el.name);
-};
+const getUsersByGender = (arr, gender) =>
+  arr.filter(el => el.gender === gender)
+  .map(el => el.name);
 
 console.log(getUsersByGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
@@ -176,18 +175,23 @@ console.log(getUsersByFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree
  * Получить массив всех скиллов всех пользователей (поле skills), при этом не должно быть
  * повторяющихся скиллов и они должны быть отсортированы в алфавитном порядке
  */
-const getAllUniqueSkills = arr => {
-  const result = [];
-  arr.forEach(
-    el => {
-      el.skills.forEach(skill => {
-        if (!result.includes(skill)) {
-          result.push(skill);
-        }
-      });
-    });
-  return result.sort();
-};
+const getAllUniqueSkills = arr => 
+arr.reduce((acc,current)=>
+[...acc,...current.skills],[])
+.filter((e,i,a)=> a.indexOf(e)===i)
+.sort();
+// {
+//   const result = [];
+//   arr.forEach(
+//     el => {
+//       el.skills.forEach(skill => {
+//         if (!result.includes(skill)) {
+//           result.push(skill);
+//         }
+//       });
+//     });
+//   return result.sort();
+// };
 
 console.log(getAllUniqueSkills(users));
 // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
@@ -197,11 +201,8 @@ console.log(getAllUniqueSkills(users));
  * Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
  */
 
-const getUserNamesSortedByFriendsCount = arr => {
-  const result = arr
-    .sort((a, b) => a.friends.length - b.friends.length)
-    .map(el => el.name);
-  return result;
-}
+const getUserNamesSortedByFriendsCount = arr =>
+  arr.sort((a, b) => a.friends.length - b.friends.length)
+  .map(el => el.name);
 console.log(getUserNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
