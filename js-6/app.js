@@ -181,7 +181,7 @@ console.log("Price with sauce: ", hamburger.price);
 console.log("Is hamburger large: ", hamburger.size === Hamburger.SIZE_LARGE); // -> false
 
 // // Убрать добавку
-hamburger.removeTopping(Hamburger.TOPPING_SPICE);
+//hamburger.removeTopping(Hamburger.TOPPING_SPICE);
 
 // // Смотрим сколько добавок
 console.log("Hamburger has %d toppings", hamburger.toppings.length); // 1
