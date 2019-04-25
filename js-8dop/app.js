@@ -117,7 +117,7 @@ class Gallery {
   changeFullview(event) {
     event.preventDefault();
     const target = event.target;
-    if (target.nodeName !== "IMG") return;
+    if (!target.classList.contains('image')) return;
     this.setFullview(target);
     this.setActive(target)
   }
