@@ -119,7 +119,7 @@ class Gallery {
     const target = event.target;
     if (!target.classList.contains('image')) return;
     this.setFullview(target);
-    this.setActive(target)
+    this.setActive(target);
   }
   setFullview(nextFullview) {
     const currentFullview = this.parentNode.querySelector(".fullview>img")
