@@ -76,9 +76,10 @@ function createCards(arr) {
     [...acc, createCard(el)]
   ,[])
 }
-//console.log(createCards(posts));
 const doms = createCards(posts);
-const parentDom = document.querySelector('.section');
+const section = document.createElement('section');
 doms.forEach(el => {
-  parentDom.appendChild(el);
+  section.appendChild(el);
 });
+const parent= document.querySelector('.container')
+parent.appendChild(section);

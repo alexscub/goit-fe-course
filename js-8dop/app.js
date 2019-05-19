@@ -102,7 +102,8 @@ class Gallery {
   constructor({
     items,
     parentNode,
-    defaultActiveItem
+    defaultActiveItem,
+    active
   }) {
     this.items = items;
     this.parentNode = parentNode;
@@ -128,10 +129,10 @@ class Gallery {
     }
   }
     setActive(nextActive) {
-      const currentActive = this.parentNode.querySelector(".active");
-      if (currentActive) {
-        currentActive.classList.remove("active");
+      if (this.active) {
+        this.active.classList.remove("active");
       }
+      this.active = nextActive;
       nextActive.classList.add("active");
     }
 }
