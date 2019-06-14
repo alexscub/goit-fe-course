@@ -82,7 +82,7 @@ function addNewCard(ev) {
 }
 // делаем запрос по API----------------------------------------
 function fetchLink(link) {
-  return fetch('http://api.linkpreview.net/?key=5cf192f15d69c372680a47ac1b06023127cc5830f0441&q=' + link)
+  return fetch('https://api.linkpreview.net/?key=5cf192f15d69c372680a47ac1b06023127cc5830f0441&q=' + link)
     .then(response => {
       if (response.ok) return response.json();
       openModal('Не валидная ссылка!')
